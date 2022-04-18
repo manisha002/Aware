@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="habit-stats" >
+
+        <a href="#" class="mainAdd" id="add-habit" onclick="addNewHabit()">Add a habit </a>  <!-- triggers addNewHabit function that makes the mainInput element visible  -->
+       
+        <a href="#" class="mainStat" id="view-stats">View Stats</a>   <!-- The Stats button -->
+        
+    </div>
+
+    <div onload="hide()" class="mainInput">  <!-- hide() will hide the element on loading the page -->
+        <input type="text" id="habit-input" style='visibility:hidden' placeholder="Write here" > 
+    </div>
+
+    <div id="dynamic-list">  <!-- Creates a dynamic list of hobbies -->
+        
+
+        
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
